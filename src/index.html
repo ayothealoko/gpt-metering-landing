@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GPT Metering</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style></style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- MOBILE HEADER -->
+      <header class="header_mobile" x-data="{open:false}">
+        <div class="header_mobile__div">
+          <img src="./img/logo.svg" alt="logo-sm" />
+          <button class="header__button" x-on:click="open =! open">
+            <img src="./img/burger.svg" alt="burger-sm" />
+          </button>
+        </div>
+        <nav x-show="open">
+          <a
+            class="nav__links nav__links__normal"
+            href="https://medium.com/@gptmetering"
+            >Blog</a
+          >
+          <a class="nav__links nav__links__cta" href="https://tally.so/r/w2Xd0e"
+            >Join the waiting list</a
+          >
+        </nav>
+      </header>
+      <!-- DESKTOP HEADER -->
+      <header class="header_desktop">
+        <img class="header_desktop__logo" src="./img/logo.svg" alt="logo-sm" />
+        <nav class="header_desktop__nav">
+          <a
+            class="nav__links nav__links__normal"
+            href="https://medium.com/@gptmetering"
+            >Blog</a
+          >
+          <a
+            class="nav__links nav__links__normal"
+            href="https://tally.so/r/w2Xd0e"
+            >Join the waiting list</a
+          >
+        </nav>
+      </header>
+      <!-- Main section MOBILE -->
+      <section class="main_mobile">
+        <h1 class="section__h1">Measure and set quotas for ChatGPT</h1>
+        <img
+          class="section__hero"
+          src="./img/js_example.png"
+          alt="js expample of gptmetering"
+        />
+        <p class="section__p">
+          Use our APIs to measure ChatGPT prompts. Know how much your customers
+          are costing you.
+        </p>
+        <div class="button_group">
+          <span class="button_group__span">Start measuring</span>
+          <div class="button_group__buttons">
+            <a
+              href="https://tally.so/r/w2Xd0e"
+              class="button_group__button button_group__cta"
+            >
+              Join the waiting list
+            </a>
+            <a
+              href="https://calendly.com/monoblack21/gpt-metering"
+              class="button_group__button button_group__extra"
+            >
+              Let's Talk
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Main section DESKTOP -->
+      <section class="main_desktop">
+        <div class="main_desktop__text">
+          <h1 class="section__h1">Measure and set quotas for ChatGPT</h1>
+          <p class="section__p">
+            Use our APIs to measure ChatGPT prompts. Know how much your
+            customers are costing you.
+          </p>
+          <div class="button_group">
+            <span class="button_group__span">Start measuring</span>
+            <div class="button_group__buttons">
+              <a
+                href="https://tally.so/r/w2Xd0e"
+                class="button_group__button button_group__cta"
+              >
+                Join the waiting list
+              </a>
+              <a
+                href="https://calendly.com/monoblack21/gpt-metering"
+                class="button_group__button button_group__extra"
+              >
+                Let's Talk
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="section__hero"
+          src="./img/js_example.png"
+          alt="js expample of gptmetering"
+        />
+      </section>
+
+      <!-- Features Section -->
+      <section class="section_feature__section">
+        <div class="section_feature">
+          <h2 class="section__h2">Always know your bill</h2>
+          <div class="point">
+            <span class="point__span">Know the cost of each prompt</span>
+            <p class="point__p">
+              Know what each customer is using down to the token.
+            </p>
+          </div>
+
+          <div class="point">
+            <span class="point__span">Know when quotas are exhausted</span>
+            <p class="point__p">
+              Get notifications when your customer reaches a percent of quota.
+            </p>
+          </div>
+
+          <div class="point">
+            <span class="point__span">Know the usage of each group</span>
+            <p class="point__p">
+              Group customers by campaign, price tear, quota and much more.
+            </p>
+          </div>
+
+          <div class="point">
+            <span class="point__span">Know who is abusing your api</span>
+            <p class="point__p">
+              Set rate limits and figure out who is abusing it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section class="footer">
+        <img class="footer__logo" src="./img/logo_dark.svg" alt="logo dark" />
+        <div class="footer__nav">
+          <span>Legal</span>
+          <a
+            href="https://www.termsfeed.com/live/3288beb0-3515-4737-b2b9-cde0ff6ba38a"
+            >Privacy policy</a
+          >
+          <a
+            href="https://www.termsfeed.com/live/922cf794-0858-4071-bf46-b7e7c68796e8"
+            >Terms</a
+          >
+        </div>
+        <div class="footer__nav">
+          <span>Resources</span>
+          <!-- <a href="#">Status</a> -->
+          <a
+            href="https://pacific-keeper-d74.notion.site/Road-map-42119963607347fcaa786fd645dfb083"
+            >Roadmap</a
+          >
+          <a
+            href="https://pacific-keeper-d74.notion.site/Change-log-9ccd54c7892249d08d6e41fcfe552ab2"
+            >Change log</a
+          >
+          <a href="mailto:support@gptmetering.com?subject=I need help with"
+            >Support</a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
